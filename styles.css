@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,300;1,200;1,700&family=Roboto+Condensed:wght@300;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.container{
+    background: linear-gradient(90deg,#a0e2f5 50% ,#f1a2e2 50%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.wrapper{
+    background-color: #dddddd;
+    width: 90%;
+    height: 90vh;
+
+}
+.navbar .logo{
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 3px solid #de3ecb;
+    border-radius: 50%;
+    border-right-color: transparent;
+    position: relative;
+
+    
+
+}
+.navbar .logo::before{
+    content:"Shopify";
+    color: black;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-10%,-50%);
+    font-family: 'Dancing Script', cursive;
+    
+}
+.navbar{
+   
+    
+    width: 90%;
+    margin: auto;
+    height: 15vh;
+}
+.navbar ,.navlist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navlist li{
+    list-style: none;
+    padding:20px;
+
+
+}
+.navlist a{
+    color: black;
+    font-size: 18px;
+    text-decoration:none;
+    position:relative;
+
+}
+.navlist a::before{
+    content:"";
+    position:absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: .5s ease-in-out;
+
+
+}
+.navlist a:hover::before{
+    width:100%;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.hero img{
+    width: 37vw;
+    height: 25vw;
+  
+}
+.content{
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap:20px;
+    border-left:4px solid #de3ecb ;
+    padding: 20px 50px ;
+ 
+
+
+}
+.content h3{
+    color: rgb(73,73,73);
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.content h1{
+    color: #de3ecb;
+    font-size: 50px;
+}
+.content p{
+    color: black;
+    font-size: 18px;
+    line-height: 30px;
+
+}
+.content button{
+    padding: 25px 30px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    background-color: #de3ecb;
+    cursor:pointer;
+
+}
+.content button:hover{
+    background-color: white;
+    color: #de3ecb;
+}
+.hamburger{
+    display: none;
+}
+.hamburger span{
+    width: 15px;
+    height: 3px;
+    background-color: black;
+    display: block;
+    margin: 5px;
+}
+.hamburger span:nth-child(2){
+    width: 30px;
+
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #thankYouMessage {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:796) {
+    .navlist{
+        position: absolute;
+    }
+    .hamburger{
+        display: block;
+    }
+    
+}
